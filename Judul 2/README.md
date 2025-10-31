@@ -1,30 +1,35 @@
- **Praktikum Jaringan Komputer – Judul 2**  
- **“Build a Switch and Router Network”** 
-**Cisco Networking Academy – Modul 10.4.4**
+# 🧩 Praktikum Jaringan Komputer – Judul 2  
+## 🔧 *Build a Switch and Router Network*  
+**Febby Yolanda Putri – 2315061003 – PJK-B**
 
 ---
 
- **Link Video Demonstrasi**
-[Klik di sini untuk menonton video praktikum di YouTube](https://youtu.be/F0Ty90rI50Y?si=hD3PuRUjB7xxTO1d
+## 🎥 Video Demonstrasi  
+🎬 [Klik di sini untuk menonton video praktikum di YouTube](https://youtu.be/F0Ty90rI50Y?si=hD3PuRUjB7xxTO1d)
 
-**Tujuan Praktikum**
-Praktikum ini bertujuan untuk membangun dan mengonfigurasi jaringan sederhana menggunakan **router, switch, dan dua PC**.  
-Mahasiswa diharapkan mampu:
-- Mengonfigurasi alamat IPv4 dan IPv6 pada setiap perangkat jaringan.  
-- Memahami fungsi router sebagai penghubung antar subnet.  
-- Melakukan verifikasi konektivitas jaringan dengan perintah `ping`.
+## 💾 File Cisco Packet Tracer  
+📁 **Nama File:** `TA2.pkt`  
+🔗 [Klik di sini untuk mengunduh file Cisco Packet Tracer](./TA2.pkt)
 
----
 
 **Topologi Jaringan**
-Berikut gambaran umum topologi yang digunakan dalam simulasi Cisco Packet Tracer:
+Berikut adalah tampilan topologi jaringan yang digunakan pada praktikum ini:
 <img width="625" height="158" alt="image" src="https://github.com/user-attachments/assets/46994c88-d9ae-4687-b264-d5f2d6712091" />
 
-**Langkah Konfigurasi Singkat**
-1. Atur alamat IP di semua perangkat sesuai tabel di atas.  
-2. Aktifkan interface router dengan perintah `no shutdown`.  
-3. Aktifkan routing IPv6 dengan `ipv6 unicast-routing`.  
-4. Lakukan pengujian konektivitas antar subnet dengan `ping`.  
-5. Simpan konfigurasi menggunakan `copy running-config startup-config`.
+## 🧪 Hasil Pengujian dan Verifikasi
+### 1️⃣ Ping dari PC-A ke PC-B  
+Pengujian ini dilakukan untuk memastikan komunikasi antar subnet melalui router berhasil.  
+Hasil menunjukkan bahwa **ping berhasil**, menandakan routing antar jaringan berjalan dengan baik.
+<img width="863" height="677" alt="ping PC A ke PC B" src="https://github.com/user-attachments/assets/943ce8dc-2549-44a0-958a-17e006c15a36" />
 
+### 2️⃣ Ping dari Switch ke PC-B  
+Pengujian ini dilakukan untuk menguji konektivitas dari switch ke perangkat di jaringan lain.  
+Hasil menunjukkan bahwa **ping juga berhasil**, artinya switch dapat mengirimkan ICMP request melalui gateway (router) menuju jaringan lain.
+<img width="846" height="150" alt="Ping Switch Ke PC B" src="https://github.com/user-attachments/assets/3467340a-89d3-409c-ae8b-f33a9eef6962" />
+
+## ✅ Kesimpulan  
+- Router berhasil menghubungkan dua subnet (`192.168.0.0/24` dan `192.168.1.0/24`).  
+- PC-A dan Switch dapat berkomunikasi dengan PC-B melalui router.  
+- Semua konektivitas antar perangkat berjalan normal.  
+- Jaringan berfungsi sesuai konfigurasi yang telah dibuat di Packet Tracer.  
 
